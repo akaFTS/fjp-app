@@ -1,5 +1,9 @@
 angular.module('starter.controllers', [])
 
+.controller('LoginCtrl', function($scope) {
+
+})
+
 .controller('NewsCtrl', function($scope, $ionicModal) {
 
   $scope.openFlash = function() {

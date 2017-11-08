@@ -1,0 +1,104 @@
+<ion-modal-view>
+    <ion-content class="news-content-wrap" ng-controller="NewsContentCtrl" has-bouncing="false">
+        <div class="news-content-header" back-img="img/pumpkins.jpg">
+            <div class="card-backdrop"></div>
+        </div>
+        <div class="close-wrap">
+            <span class="icon ion-ios-close-empty" ng-click="closeModal()"></span>
+        </div>
+        <div class="save-wrap">
+            <span class="icon ion-ios-cloud-download-outline"></span>
+        </div>
+        <h1 class="news-title">
+            Heat wave causes serious pumpkin shortage
+        </h1>
+        <h2 class="news-lead">The hot, dry summer may have played a role in smaller pumpkins</h2>
+        <div class="publisher-area">
+            <div class="publisher-info">
+                <div class="pub-image">
+                    A
+                </div>
+                <div class="pub-desc">
+                    <p><b>AgroAll</b></p>
+                    <p>by <b>Reynolds Pump</b></p>
+                    <p>on <b>11/08/2017</b></p>
+                </div>
+            </div>
+            <div class="follow-btn border-red red">
+                <span class="icon ion-ios-plus-empty"></span>
+                <span>Follow</span>
+            </div>
+        </div>
+        <div class="news-body">
+            <p> It’s just about that time of year — time to head out and grab a jack o’ lantern ahead of Halloween. But you better hurry because there may be a possible pumpkin shortage.
+
+            Ken Laity, who operates a pumpkin patch in Maple Ridge, says the heat and dryness this summer have been contributing factors.
+            “Most people don’t irrigate the pumpkins so not too many pumpkin farmers are set up for that [extreme dry weather.] You’re just depending on the amount of moisture within your soil. Some farms did extremely well and then others are not fantastic. It might be a tight year for pumpkins this year.”
+
+            He adds the overall sizes could be smaller as well as the winter squashes are made up of 90 per cent water. “It was just the extreme drought for that 45 days where it was just non-stop heat and no rain. It was just so stressful on a lot of the plants.”
+
+            However, interestingly enough the harvest of smaller pie or baking pumpkins, which are more of a bush than a vine, shouldn’t be affected.</p>
+        </div>
+        <div class="up-area">
+            <div class="up-button">
+                <span class="icon ion-arrow-up-a"></span>
+            </div>
+            <div class="up-info">
+                <h3 class="red">Up this article</h3>
+                <p>3.2K people have upped it.</p>
+            </div>
+        </div>
+        <div class="category-title">
+            <span class="category-icon ion-edit blue"></span>
+            <span class="caption">More from AgroAll</span>
+        </div>
+        <ion-scroll direction="x">
+            <div class="category-carousel">
+                <div class="news-card" back-img="img/corn.jpg" ng-click="openFlash()">
+                    <div class="card-backdrop-bottom"></div>
+                    <h1 class="title">Corn Harvest Now 70% Finished, Soybeans Still Slightly Behind Average Pace</h1>
+                    <p class="author"><span class="bold">Crops Francis</span> <span class="spot">•</span> AggroAll</p>
+                </div>
+                <div class="news-card texted">
+                    <h1 class="title">USDA Will Try Again on Update of Biotechnology Regulations
+                    </h1>
+                    <p class="author"><span class="bold">Reynolds Erin</span> <span class="spot">•</span> AggroAll</p>
+                </div>
+            </div>
+        </ion-scroll>
+        <div class="category-title">
+            <div class="ball bg-red"></div>
+            <span class="caption">Trending on Politics</span>
+        </div>
+        <ion-scroll direction="x">
+            <div class="category-carousel">
+                <div class="news-card" back-img="img/virginia.jpeg" ng-click="openFlash()">
+                    <div class="card-backdrop-bottom"></div>
+                    <h1 class="title">Conservative media: What Virginia results?</h1>
+                    <p class="author"><span class="bold">Jason Schwartz</span> <span class="spot">•</span> politico</p>
+                </div>
+                <div class="news-card texted">
+                    <h1 class="title">Hillary Clinton guest-edits Teen Vogue print edition</h1>
+                    <p class="author"><span class="bold">Cristiano Lima</span> <span class="spot">•</span> PNum</p>
+                </div>
+            </div>
+        </ion-scroll>
+        <div class="category-title">
+            <span class="category-icon ion-ios-paper red"></span>
+            <span class="caption">Follow your feed</span>
+        </div>
+        <ion-scroll direction="x">
+            <div class="category-carousel">
+                <div class="news-card" back-img="img/uber.jpg" ng-click="openFlash()">
+                    <div class="card-backdrop-bottom"></div>
+                    <h1 class="title">Brazil Becomes Uber’s Latest Regulatory Battleground</h1>
+                    <p class="author"><span class="bold">Samuel Jones</span> <span class="spot">•</span> Latin All Day</p>
+                </div>
+                <div class="news-card texted">
+                    <h1 class="title">Mystery man pays for 58 strangers' meals to honor Las Vegas shooting victims</h1>
+                    <p class="author"><span class="bold">Greg Herrington</span> <span class="spot">•</span> Altruism Web</p>
+                </div>
+            </div>
+        </ion-scroll>
+    </ion-content>
+</ion-modal-view>

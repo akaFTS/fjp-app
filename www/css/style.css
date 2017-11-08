@@ -48,22 +48,6 @@ ion-tabs .tabs.tab-nav .tab-item.main-tab{
     opacity: 1 !important;
 }
 
-ion-tabs .tabs.tab-nav .tab-item.main-tab .icon{
-    border: 3px solid #999;
-    position: relative;
-    top: -20px;
-    height: 60px;
-    width: 60px;
-    font-size: 30px;
-    line-height: 42px;
-    border-radius: 50px;
-    background-color: #333;
-}
-
-ion-tabs .tabs.tab-nav .tab-item.main-tab.tab-item-active .icon{
-    border-color: #d52628;
-}
-
 /* CARDS */
 
 .news-card {
@@ -212,9 +196,134 @@ ion-tabs .tabs.tab-nav .tab-item.main-tab.tab-item-active .icon{
 
 /* MODAL */
 
-.news-content-wrap {
-    background-color: #eee;
+.close-wrap {
+    position: absolute;
+    right: 5px;
+    top: -2px !important;
+    margin-right: 3px;
 }
+
+.close-wrap .icon {
+    font-size: 50px;
+    padding-right: 5px;
+    padding-bottom: 10px !important;
+    margin-top: -10px;
+    color: white;
+}
+
+.save-wrap {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    margin-left: 3px;    
+}
+
+.save-wrap .icon {
+    font-size: 32px;
+    padding-left: 5px;
+    color: white;
+}
+
+.news-content-wrap {
+    background-color: white;
+}
+
+.news-content-wrap .news-title{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 800;
+    padding: 0 10px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 32px;
+}
+
+.news-content-wrap .news-lead {
+    color: #888;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 5px 10px;
+}
+
+.news-content-wrap .news-body p {
+    padding: 0 10px;
+    font-size: 15px;
+    color: #333;
+    text-indent: 30px;
+    margin-bottom: 30px;
+}
+
+.news-content-wrap .category-title {
+    color: #666;
+}
+
+.news-content-wrap .category-carousel .news-card.texted {
+    background-color: #AAA;
+}
+
+.news-content-wrap .category-carousel .news-card.texted .title {
+    color: #333;
+}
+
+.news-content-wrap .category-carousel .news-card.texted .author {
+    color: #555;
+}
+
+.news-content-wrap .publisher-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin: 30px 0;
+}
+
+.news-content-wrap .publisher-area .follow-btn{
+    border: 1px solid #EEE;
+    color: #EEE;
+    border-radius: 20px;
+    padding: 2px 6px;
+}
+
+.news-content-wrap .publisher-area .publisher-info {
+    display: flex;
+    align-items: center;
+}
+
+.news-content-wrap .publisher-area .publisher-info .pub-image {
+    background-color:#73cdd0;
+    color: #EEE;
+    width: 45px;
+    height: 45px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.news-content-wrap .publisher-area .publisher-info .pub-desc p {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.2;
+    font-size: 14px;
+    color: #888;
+}
+
+.news-content-wrap .publisher-area .publisher-info .pub-desc p b{
+    color: #444;
+}
+
+.news-content-wrap ion-scroll:last-child {
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
 
 ion-content ion-list.list-margined .list{
     margin-bottom: 20px;
@@ -365,20 +474,6 @@ hr {
 
 .buttons {
     padding-bottom: 10px !important;
-}
-
-.close-modal {
-    font-size: 50px;
-    padding-right: 5px;
-    padding-bottom: 10px !important;
-    margin-top: -10px;
-}
-
-.close-wrap {
-    position: absolute;
-    right: 5px;
-    top: -2px !important;
-    margin-right: 3px;
 }
 
 /* CATEGORIES */

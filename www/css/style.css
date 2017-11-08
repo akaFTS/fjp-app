@@ -319,8 +319,41 @@ ion-tabs .tabs.tab-nav .tab-item.main-tab{
     padding-bottom: 20px;
 }
 
+.news-content-wrap .up-area {
+    display: flex;
+    align-items: center;
+    margin: 30px 10px;
+}
 
+.news-content-wrap .up-area .up-button {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #DDD;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 45px;
+    color: #AAA;
+    margin-right: 5px;
+}
 
+.news-content-wrap .up-area .up-button:hover {
+    color: #d52628 !important;
+    cursor: pointer;
+}
+
+.news-content-wrap .up-area .up-info h3 {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+}
+
+.news-content-wrap .up-area .up-info p {
+    margin: 0;
+    color: #777;
+    font-size: 13px;
+}
 
 
 
@@ -524,9 +557,16 @@ hr {
     font-size: 21px;
 }
 
+/* SEARCH */
+
 .search-bar {
     background: #333;
     border-bottom: 0;
+}
+
+.item-input-wrapper {
+    background-color: #222;
+    color: white;
 }
 
 /* DEFINITIONS */

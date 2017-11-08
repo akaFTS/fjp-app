@@ -1,5 +1,44 @@
-<ion-view view-title="Meeting Intervals">
-    <ion-content class="content">
-        Leo Viadão
+<ion-modal-view>
+    <ion-content class="news-content-wrap" ng-controller="NewsContentCtrl">
+        <div class="news-content-header" back-img="img/michel.jpg">
+            <div class="card-backdrop-bottom"></div>
+            <div class="text-pack">
+                <h1 class="title">Michel Temer renuncia</h1>
+            </div>
+        </div>
+        <div class="close-wrap">
+            <span class="ion-ios-close-empty close-modal" ng-click="closeModal()"></span>
+        </div>
+        <ion-list class="list-margined">
+            <ion-item>
+                <div class="text-flex-image">
+                    <div class="image-box">
+                        <img class="rounded" ng-src="img/michel.jpg">
+                    </div>
+                    <div class="text-box">
+                        <small>por Leonardo Padilha </small> </br>
+                        <small>em 02/10/2017 </small>
+                    </div>
+                    <div class="follow-button-wrap">
+                        <button class="button button-balanced follow-button">
+                            <span class="button-text"><span class="ion-plus-circled"></span> Seguir </span>
+                        </button>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+        <ion-list class="list-margined">
+            <ion-item class="news-content-body">
+                <div class="news-lide"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id ante nec augue volutpat luctus. </p></div>
+                <hr>
+                <div class="news-value"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et elit lobortis, porta eros eu, tempor ipsum. Suspendisse potenti. Nullam a augue a tortor mattis pellentesque ac ut purus. Integer gravida iaculis sapien, quis aliquet nibh varius nec. Mauris nisl lectus, accumsan et tristique et, elementum vel orci. Duis metus orci, tempor ac euismod ac, euismod nec dui. Vivamus semper quam vel sodales condimentum. Nullam cursus metus vel magna semper sagittis. Nulla id lobortis diam, ac commodo urna. Suspendisse mollis diam et facilisis tristique.<br>
+
+                Quisque id euismod metus. Fusce molestie metus in neque finibus ullamcorper. Vestibulum in semper dolor, a dictum ipsum. Donec sed hendrerit neque, eget placerat odio. Suspendisse nisl mauris, cursus quis mi eget, tempor hendrerit arcu. Etiam sed magna in ante fermentum placerat quis id ante. Nam gravida in odio eu pulvinar. Vestibulum at consequat risus. Vestibulum nec orci consectetur, tristique turpis dignissim, convallis tortor. Vestibulum hendrerit neque id elit placerat aliquet. Integer et sapien vel ipsum varius bibendum vel a nibh. In vehicula elit sit amet nulla hendrerit, sit amet placerat lacus ullamcorper.</br>
+
+                Nulla eleifend lorem mi, quis euismod mi egestas nec. Aliquam sagittis tristique ligula, eu congue enim tempor eu. In rhoncus ligula ultrices, convallis massa vel, condimentum sem. Pellentesque vel dictum lectus. Aenean sit amet eros nunc. Donec blandit justo vel varius vulputate. Nam finibus non sapien consectetur lacinia. Phasellus justo justo, tempus nec eros ac, posuere dictum mi. Integer eu fringilla mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque venenatis accumsan metus at tincidunt. Nullam a efficitur arcu. In sapien nibh, pulvinar id mi sit amet, congue placerat nibh. Suspendisse vel commodo eros. In fermentum quam sem, eget finibus metus aliquam non. Integer mattis egestas dictum.</br>
+
+                Maecenas condimentum eget nibh finibus ornare. Nunc suscipit lectus sed finibus condimentum. Donec vitae mauris blandit, vehicula ex sed, volutpat metus. Pellentesque sed auctor felis, sed hendrerit ipsum. Pellentesque ligula lorem, eleifend tempus urna eu, accumsan tempor dui. Sed mauris lacus, auctor ut imperdiet et, malesuada at ligula. Vestibulum pretium maximus aliquam. Pellentesque sit amet dui sed mi pharetra rutrum non non lacus. Vivamus vel lorem ante. Pellentesque nunc arcu, tincidunt sed dui in, pharetra ultrices dolor.</p></div>
+            </ion-item>
+        </ion-list>
     </ion-content>
-</ion-view>
+</ion-modal-view>

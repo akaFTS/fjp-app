@@ -161,15 +161,85 @@ ion-tabs .tabs.tab-nav .tab-item.tab-item-active{
     background-color: black;
 
     background: rgb(0, 0, 0);
-    background: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0) 90%);
-    background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0) 90%);
-    background: -o-linear-gradient(270deg, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0) 90%);
-    background: -ms-linear-gradient(270deg, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0) 90%);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0) 90%);
+    background: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 90%);
+    background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 90%);
+    background: -o-linear-gradient(270deg, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 90%);
+    background: -ms-linear-gradient(270deg, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 90%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 90%);
 }
+
+/* CATEGORIES */
+
+.category-title {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Open Sans", "Helvetica Neue";
+    margin: 20px 10px 5px;
+    display: flex;
+    align-items: center;
+}
+
+.category-title .ball {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.category-title .category-icon {
+    margin-right: 5px;
+}
+
+.category-carousel {
+    display: flex;
+    width: 800px;
+}
+
+.category-carousel .news-card {
+    height: 150px;
+    justify-content: flex-end;
+    flex-basis: 250px;
+    margin: 0 5px;
+}
+
+.category-carousel .news-card:first-child {
+    margin-left: 10px;
+}
+
+.category-carousel .news-card:last-child {
+    margin-right: 10px;
+}
+
+.category-carousel .news-card .title{
+    font-size: 21px;
+}
+
+/* DEFINITIONS */
 
 .bold {
     font-weight: bold;
+}
+
+.red {
+    color: #d52628 !important;
+}
+
+.green {
+    color: #388e3c !important;    
+}
+
+.blue {
+    color: #3f51b5 !important;
+}
+
+.orange {
+    color: #E65100 !important;
+}
+
+.cyan {
+    color: #00BCD4 !important;
 }
 
 .bg-red {

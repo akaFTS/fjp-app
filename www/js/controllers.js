@@ -1,7 +1,9 @@
 angular.module('starter.controllers', [])
 
-.controller('LoginCtrl', function($scope) {
-
+.controller('LoginCtrl', function($scope, $state) {
+  $scope.login = function() {
+    $state.go('tab.news');
+  }
 })
 
 .controller('NewsCtrl', function($scope, $ionicModal) {

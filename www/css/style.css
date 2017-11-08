@@ -48,6 +48,27 @@ ion-tabs .tabs.tab-nav .tab-item.main-tab{
     opacity: 1 !important;
 }
 
+/* LOGIN */
+
+.login h2 {
+    color: white;
+    text-align: center;
+    margin: 30px 10px;
+    font-size: 20px;
+}
+
+.login .fb-btn {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    background-color: transparent;
+    border: none;
+}
+
+.login .fb-btn img {
+    width: 100%;
+}
+
 /* CARDS */
 
 .news-card {

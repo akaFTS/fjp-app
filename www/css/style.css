@@ -154,6 +154,24 @@ ion-tabs .tabs.tab-nav .tab-item.main-tab.tab-item-active .icon{
     color: #BBB;
 }
 
+.news-header {
+    background-color: #CCC;
+    margin: 0 10px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    padding: 3px 10px;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    color: #444;
+    display: flex;
+    align-items: center;
+}
+
+.news-header .icon {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
 .news-card img {
     position: absolute;
     top: 0;
@@ -191,6 +209,8 @@ ion-tabs .tabs.tab-nav .tab-item.main-tab.tab-item-active .icon{
     background: -ms-linear-gradient(270deg, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0) 90%);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0) 90%);
 }
+
+/* MODAL */
 
 .news-content-wrap {
     background-color: #eee;
@@ -250,25 +270,6 @@ img.rounded {
 .news-card .caption-wrap {
     display: flex;
     align-items: center;
-}
-/* CATEGORIES */
-
-.category-title {
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: "Open Sans", "Helvetica Neue";
-    margin: 20px 10px 5px;
-    display: flex;
-    align-items: center;
-}
-
-.category-title .ball {
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    margin-right: 5px;
 }
 
 .news-content-header img {
@@ -362,8 +363,42 @@ hr {
     font-size: 16px !important;
 }
 
-.bg-red {
-    background-color: #d52628;   
+.buttons {
+    padding-bottom: 10px !important;
+}
+
+.close-modal {
+    font-size: 50px;
+    padding-right: 5px;
+    padding-bottom: 10px !important;
+    margin-top: -10px;
+}
+
+.close-wrap {
+    position: absolute;
+    right: 5px;
+    top: -2px !important;
+    margin-right: 3px;
+}
+
+/* CATEGORIES */
+
+.category-title {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Open Sans", "Helvetica Neue";
+    margin: 20px 10px 5px;
+    display: flex;
+    align-items: center;
+}
+
+.category-title .ball {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
 }
 
 .category-title .category-icon {
@@ -420,30 +455,16 @@ hr {
     color: #00BCD4 !important;
 }
 
+.bg-red {
+    background-color: #d52628;   
+}
+
 .bg-green {
     background-color: #388e3c;    
 }
 
 .bg-blue {
     background-color: #3f51b5;
-}
-
-.buttons {
-    padding-bottom: 10px !important;
-}
-
-.close-modal {
-    font-size: 50px;
-    padding-right: 5px;
-    padding-bottom: 10px !important;
-    margin-top: -10px;
-}
-
-.close-wrap {
-    position: absolute;
-    right: 5px;
-    top: -2px !important;
-    margin-right: 3px;
 }
 
 .border-red {

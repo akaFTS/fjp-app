@@ -36,9 +36,33 @@ ion-tabs .tabs.tab-nav .tab-item .icon{
 ion-tabs .tabs.tab-nav .tab-item.tab-item-active{
     color: #d52628;
     font-weight: bold;
-    border-bottom: none;
 }
 
+.platform-android ion-tabs .tabs.tab-nav .tab-item {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+ion-tabs .tabs.tab-nav .tab-item.main-tab{
+    overflow: visible;
+    opacity: 1 !important;
+}
+
+ion-tabs .tabs.tab-nav .tab-item.main-tab .icon{
+    border: 3px solid #999;
+    position: relative;
+    top: -20px;
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    line-height: 42px;
+    border-radius: 50px;
+    background-color: #333;
+}
+
+ion-tabs .tabs.tab-nav .tab-item.main-tab.tab-item-active .icon{
+    border-color: #d52628;
+}
 
 /* CARDS */
 
@@ -56,7 +80,7 @@ ion-tabs .tabs.tab-nav .tab-item.tab-item-active{
 
 .news-card.texted {
     padding: 5px 0;
-    height: 120px;
+    height: 130px;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -161,11 +185,11 @@ ion-tabs .tabs.tab-nav .tab-item.tab-item-active{
     background-color: black;
 
     background: rgb(0, 0, 0);
-    background: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 90%);
-    background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 90%);
-    background: -o-linear-gradient(270deg, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 90%);
-    background: -ms-linear-gradient(270deg, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 90%);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 90%);
+    background: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0) 90%);
+    background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0) 90%);
+    background: -o-linear-gradient(270deg, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0) 90%);
+    background: -ms-linear-gradient(270deg, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0) 90%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0) 90%);
 }
 
 .news-content-wrap {
@@ -423,13 +447,13 @@ hr {
 }
 
 .border-red {
-    border-color: #d52628;
+    border-color: #d52628 !important;
 }
 
 .border-green {
-    border-color: #388e3c;    
+    border-color: #388e3c !important;    
 }
 
 .border-blue {
-    border-color: #3f51b5;
+    border-color: #3f51b5 !important;
 }

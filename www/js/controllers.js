@@ -19,6 +19,12 @@ angular.module('starter.controllers', [])
 .controller('SearchCtrl', function($scope) {
 
 })
+.controller('SettingsCtrl', function($scope) {
+
+})
+.controller('SavedCtrl', function($scope) {
+
+})
 
 .controller('NewsContentCtrl', function($scope) {
     $scope.closeModal = function() {

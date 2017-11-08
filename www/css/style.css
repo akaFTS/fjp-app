@@ -524,6 +524,11 @@ hr {
     font-size: 21px;
 }
 
+.search-bar {
+    background: #333;
+    border-bottom: 0;
+}
+
 /* DEFINITIONS */
 
 .bold {

@@ -319,9 +319,16 @@ ion-tabs .tabs.tab-nav .tab-item.main-tab{
     padding-bottom: 20px;
 }
 
+.close-saved {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
 
-
-
+.close-saved span {
+    font-size: 20px;
+    color: #eee;
+}
 
 
 

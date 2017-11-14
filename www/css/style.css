@@ -217,6 +217,14 @@ ion-tabs .tabs.tab-nav .tab-item.main-tab{
 
 /* MODAL */
 
+ion-modal-view {
+    background-color: rgba(0,0,0, 0.6) !important;
+}
+
+ion-modal-view ion-content {
+    background-color: transparent;
+}
+
 .close-wrap {
     position: absolute;
     right: 5px;
@@ -290,7 +298,7 @@ ion-tabs .tabs.tab-nav .tab-item.main-tab{
     color: #555;
 }
 
-.news-content-wrap .publisher-area {
+.publisher-area {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -298,19 +306,19 @@ ion-tabs .tabs.tab-nav .tab-item.main-tab{
     margin: 30px 0;
 }
 
-.news-content-wrap .publisher-area .follow-btn{
-    border: 1px solid #EEE;
-    color: #EEE;
+.publisher-area .follow-btn{
+    border: 1px solid #BBB;
+    color: #BBB;
     border-radius: 20px;
     padding: 2px 6px;
 }
 
-.news-content-wrap .publisher-area .publisher-info {
+.publisher-area .publisher-info {
     display: flex;
     align-items: center;
 }
 
-.news-content-wrap .publisher-area .publisher-info .pub-image {
+.publisher-area .publisher-info .pub-image {
     background-color:#73cdd0;
     color: #EEE;
     width: 45px;
@@ -324,7 +332,7 @@ ion-tabs .tabs.tab-nav .tab-item.main-tab{
     margin-right: 5px;
 }
 
-.news-content-wrap .publisher-area .publisher-info .pub-desc p {
+.publisher-area .publisher-info .pub-desc p {
     margin: 0;
     font-family: "Open Sans", sans-serif;
     line-height: 1.2;
@@ -332,7 +340,7 @@ ion-tabs .tabs.tab-nav .tab-item.main-tab{
     color: #888;
 }
 
-.news-content-wrap .publisher-area .publisher-info .pub-desc p b{
+.publisher-area .publisher-info .pub-desc p b{
     color: #444;
 }
 
@@ -363,10 +371,16 @@ ion-tabs .tabs.tab-nav .tab-item.main-tab{
     border: 2px solid #DDD;
     border-radius: 25px;
     text-align: center;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 45px;
     color: #AAA;
     margin-right: 5px;
+}
+
+.news-content-wrap .up-area .up-button.bigger {
+    transition: all 0.15s ease-in;
+    font-size: 32px;
+    background-color: #DDD;
 }
 
 .news-content-wrap .up-area .up-button:hover {
@@ -599,6 +613,56 @@ hr {
     background-color: #222;
     color: white;
 }
+
+/* PUBLISHER */
+
+.publisher-header {
+    height: 200px;
+    background-color: #EEE;
+    position: relative;
+    background-position: center;
+    z-index: -1;
+}
+
+.publisher-header .publisher-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0) 90%);
+    background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0) 90%);
+    background: -o-linear-gradient(270deg, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0) 90%);
+    background: -ms-linear-gradient(270deg, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0) 90%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0) 90%);
+}
+
+.publisher .publisher-area {
+    margin: 10px;
+    margin-top: -65px;
+    z-index: 3;
+}
+
+.publisher .publisher-area .publisher-info .pub-image{
+   width: 55px;
+   height: 55px;
+   margin-right: 15px;
+}
+
+.publisher .publisher-area .publisher-info .pub-desc p b{
+   color: white;
+   font-size: 18px;
+}
+
+.publisher .publisher-description{
+   color: rgba(255, 255, 255, 0.8);
+   font-size: 16px;
+   margin: 15px;
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+
 
 /* DEFINITIONS */
 

@@ -22,9 +22,16 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('SearchCtrl', function($scope) {
+.controller('SearchCtrl', function($scope, $state) {
+  $scope.goToHub = function() {
+    $state.go("tab.search-result");
+  }
+})
+
+.controller('SearchResCtrl', function($scope) {
 
 })
+
 .controller('SettingsCtrl', function($scope) {
 
 })
@@ -32,8 +39,13 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('NewsContentCtrl', function($scope) {
+.controller('NewsContentCtrl', function($scope, $state) {
     $scope.closeModal = function() {
         $scope.modal.hide();
+    }
+
+    $scope.openPublisher = function() {
+      $state.go("tab.search-result");
+      $scope.modal.hide();
     }
 })
